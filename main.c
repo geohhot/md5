@@ -53,7 +53,7 @@ static void MDTestSuite ()
 int main (void) {
 
   #define TEST_STR "The quick brown fox jumps over the lazy dog"
-  strcpy (test, TEST_STR);
+  char *test = TEST_STR;
   uint8_t len = strlen (TEST_STR);
   uint8_t final_digest[16];
   MD5_CTX ctx;  
